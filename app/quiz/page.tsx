@@ -41,7 +41,7 @@ export default function Home() {
         setQuestions([...data.questions]);
         console.log(data.questions)
         setIsLoading(false);
-      } catch (err) {
+      } catch {
         setError("Failed to load quiz questions. Please try again later.");
         setIsLoading(false);
       }
